@@ -6,6 +6,7 @@ html {
   overflow-y: scroll;
 }
 body {
+  background-color: #1b2934;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -32,6 +33,7 @@ nav,
 section,
 summary {
   display: block;
+  color: #a9e5e5;
 }
 audio,
 canvas,
@@ -594,4 +596,15 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+#name {
+  font-size: 4em;
+  font-family: monospace;
+  margin-left: 5em;
+  margin-top: 5em;
+}
+
+footer {
+  margin-top: 5em;
 }
