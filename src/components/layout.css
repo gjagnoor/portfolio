@@ -3,9 +3,9 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 body {
   background-color: #0e1a2d;
@@ -594,31 +594,28 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
 
 #name {
   font-size: 4em;
   font-family: monospace;
-  margin-left: 5em;
-  margin-top: 3em;
+  margin: 0 auto;
   color: #04d9ff;
 }
 
 #position {
   margin-top: 4rem;
-  width: 120%;
 }
 
 #positiontext {
-  font-size: 5em;
+  font-size: 9vh;
   font-family: 'Share Tech Mono', monospace;
   background: -webkit-linear-gradient(#00a1ff, #00ff8f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#line {
+  border: 1px solid #3ce397;
 }
 
 #enter {
@@ -633,7 +630,6 @@ pre tt:after {
   padding: 1.3em;
   padding-left: 3em;
   padding-right: 3em;
-  margin-left: 22em;
   font-family: 'Share Tech Mono', monospace;
   text-decoration: none;
 }
@@ -671,6 +667,13 @@ header {
 
 #languages h6 {
   white-space: nowrap;
+}
+
+@media screen and (max-width: 1000px) {
+  #languages h6 {
+    white-space: pre-wrap;
+    line-height: 2;
+  }
 }
 
 #about {
@@ -741,4 +744,20 @@ header {
 
 .projdesc2 {
   float: right;
+}
+
+#email:hover {
+  border: 1px dashed #3ce397;
+  padding: 2%;
+  width: fit-content;
+}
+
+@media screen and (max-width: 1000px) {
+  #name {
+    font-size: 300%;
+  }
+
+  #positiontext {
+    font-size: 300%;
+  }
 }

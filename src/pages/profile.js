@@ -247,6 +247,7 @@ const Profile = () => {
               </div>
             </Grid>
           </Grid>
+          <hr id="line" />
           <Grid container spacing={3}>
             <Grid item xs={12} sm={5} style={{display: "flex", flexDirection:"column"}}>
               <div>
@@ -265,6 +266,7 @@ const Profile = () => {
               </Link>
             </Grid>
           </Grid>
+          <hr id="line" />
           <Grid container spacing={3}>
             <Grid item xs={12} sm={7}>
               <Link to="https://gjagnoor.github.io/portfolio/">
@@ -285,10 +287,12 @@ const Profile = () => {
           </Grid>
         </div>
       </div>
-      <div id="contact">
-        <h4 style={{ color: "#04d9ff", fontFamily: 'Share Tech Mono, monospace', margin: 0, textAlign: "center", fontSize: `3em` }}>Get In Touch</h4>
-        <p style={{ color: "#3ce397", textAlign: "center", marginTop: "5em"}}>grewal.jagnoor@gmail.com</p>
-      </div>
+      <center>
+        <div id="contact">
+          <h4 style={{ color: "#04d9ff", fontFamily: 'Share Tech Mono, monospace', margin: 0, textAlign: "center", fontSize: `3em` }}>Get In Touch</h4>
+          <p id="email" style={{ color: "#3ce397", textAlign: "center", marginTop: "5em"}}>grewal.jagnoor@gmail.com</p>
+        </div>
+      </center>
     </Layout>
   )
 }
