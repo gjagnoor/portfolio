@@ -190,8 +190,9 @@ const Profile = () => {
 
   return (
     <Layout>
-      <Header />
+      {/* <Header /> */}
       <SEO title="profile" />
+      <div style={{ margin: "auto", display: "flex", flexDirection: "column"}}>
       <div id="about">
         <h3>I build things for the web.</h3>
         <p>Hello, I'm a software engineer based in NY. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I specialize in building web applications and websites</p>
@@ -200,7 +201,6 @@ const Profile = () => {
           # Get In touch
         </Link>
       </div>
-      {/* swap with timeline */}
       <div id="workexperience">
         <h4 style={{color: "#04d9ff", fontFamily: 'Share Tech Mono, monospace', margin: 0}}>Work Experience</h4>
         <div className={classes.root}>
@@ -292,7 +292,8 @@ const Profile = () => {
           <h4 style={{ color: "#04d9ff", fontFamily: 'Share Tech Mono, monospace', margin: 0, textAlign: "center", fontSize: `3em` }}>Get In Touch</h4>
           <p id="email" style={{ color: "#3ce397", textAlign: "center", marginTop: "5em"}}>grewal.jagnoor@gmail.com</p>
         </div>
-      </center>
+        </center>
+    </div>
     </Layout>
   )
 }

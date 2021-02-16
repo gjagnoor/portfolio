@@ -11,6 +11,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
+      <div style={{display: "flex", flexDirection: "column"}}>
       <center>
         <div id="name">
           <Typewriter
@@ -49,7 +50,9 @@ const IndexPage = () => {
             <bold># ENTER</bold>
           </Link>
         </div>
-      </center>
+        </center>
+        </div>
+
     </Layout>
   )
 }

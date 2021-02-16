@@ -3,12 +3,14 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-size: 1.5vw;
   box-sizing: border-box;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 body {
   background-color: #0e1a2d;
+  font-size: 1.5vw;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,6 +23,8 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  overflow-x: hidden;
+
 }
 article,
 aside,
@@ -596,7 +600,7 @@ pre tt:after {
 }
 
 #name {
-  font-size: 4em;
+  font-size: 4vw;
   font-family: monospace;
   margin: 0 auto;
   color: #04d9ff;
@@ -607,11 +611,12 @@ pre tt:after {
 }
 
 #positiontext {
-  font-size: 9vh;
+  font-size: 5vw;
   font-family: 'Share Tech Mono', monospace;
   background: -webkit-linear-gradient(#00a1ff, #00ff8f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
 
 #line {
@@ -640,9 +645,9 @@ pre tt:after {
   border-radius: 20%;
   background: transparent;
   color: #04d9ff;
-  padding: 1.3em;
-  padding-left: 3em;
-  padding-right: 3em;
+  padding: 1.3vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
   font-family: 'Share Tech Mono', monospace;
   text-decoration: none;
 }
@@ -677,8 +682,8 @@ header {
 }
 
 #about {
-  margin-top: 10em;
-  margin-bottom: 5em;
+  margin-top: 10vw;
+  margin-bottom: 5vw;
 }
 
 #about h3 {
@@ -704,21 +709,22 @@ header {
 }
 
 #featuredprojects {
-  margin-top: 10em;
+  margin-top: 10vw;
   padding: 5%;
 }
 
 #contact {
-  margin-top: 10em;
+  margin-top: 10vw;
 }
 
 .projimg {
   width: 120%;
+  border: 1px dashed #3ce397;
+  padding: 2%;
 }
 
 .projimg:hover {
-  border: 1px dashed #3ce397;
-  padding: 2%;
+  border: none;
 }
 
 .projheading1 {
@@ -750,14 +756,4 @@ header {
   border: 1px dashed #3ce397;
   padding: 2%;
   width: fit-content;
-}
-
-@media screen and (max-width: 1000px) {
-  #name {
-    font-size: 300%;
-  }
-
-  #positiontext {
-    font-size: 300%;
-  }
 }
