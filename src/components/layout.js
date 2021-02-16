@@ -14,18 +14,20 @@ const Layout = ({ children }) => {
   return (
     <>
       <div
+        className="vertical-center"
         style={{
           margin: `0 auto`,
           padding: `5vw`,
-          maxWidth: 1400
+          maxWidth: 1400,
         }}
       >
         <main>{children}</main>
         <footer
+          // className="vertical-center_"
           style={{
-            marginTop: `11rem`,
+            marginTop: `6vw`,
             textAlign: "center",
-            color: `#04d9ff`
+            color: `#04d9ff`,
           }}
         >
           © {new Date().getFullYear()}, Built with
