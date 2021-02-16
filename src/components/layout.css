@@ -702,8 +702,43 @@ header {
 
 #featuredprojects {
   margin-top: 10em;
+  padding: 5%;
 }
 
 #contact {
   margin-top: 10em;
+}
+
+.projimg {
+  width: 120%;
+}
+
+.projimg:hover {
+  border: 1px dashed #3ce397;
+  padding: 2%;
+}
+
+.projheading1 {
+  float: right;
+  font-family: 'Share Tech Mono', monospace;
+  color: #3ce397;
+}
+
+.projdesc1 {
+  float: left;
+}
+
+.projlangs {
+  text-align: center;
+  color: #3ce397;
+}
+
+.projheading2 {
+  float: left;
+  font-family: 'Share Tech Mono', monospace;
+  color: #3ce397;
+}
+
+.projdesc2 {
+  float: right;
 }

@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
         <footer
           style={{
             marginTop: `11rem`,
-            marginLeft: `18rem`,
+            textAlign: "center",
             color: `#04d9ff`
           }}
         >

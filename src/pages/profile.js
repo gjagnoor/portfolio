@@ -1,6 +1,6 @@
 import React from "react"
 import Header from "../components/header.js";
-// import { Link } from "gatsby";
+import { Link } from "gatsby";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { makeStyles, withStyles } from '@material-ui/core/styles';
@@ -12,11 +12,15 @@ import StepButton from "@material-ui/core/StepButton"
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import Link from "@material-ui/core/Link";
+// import Link from "@material-ui/core/Link";
 import StepIcon from '@material-ui/core/StepIcon';
 import StepConnector from '@material-ui/core/StepConnector';
 import clsx from 'clsx';
 import Check from '@material-ui/icons/Check';
+import proj1 from "../images/proj1.png";
+import Grid from '@material-ui/core/Grid';
+import aariacli from "../images/aaria-cli.png";
+import portfolio from "../images/portfolio.png";
 
 
 
@@ -25,6 +29,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
     fontSize: `0.8em`,
+    flexGrow: 1,
+    marginTop: `5%`
   },
   button: {
     marginRight: theme.spacing(1),
@@ -190,10 +196,11 @@ const Profile = () => {
         <h3>I build things for the web.</h3>
         <p>Hello, I'm a software engineer based in NY. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I specialize in building web applications and websites</p>
         <br />
-        <Link className="link_">
+        <Link className="link_" to="#contact">
           # Get In touch
         </Link>
       </div>
+      {/* swap with timeline */}
       <div id="workexperience">
         <h4 style={{color: "#04d9ff", fontFamily: 'Share Tech Mono, monospace', margin: 0}}>Work Experience</h4>
         <div className={classes.root}>
@@ -221,9 +228,66 @@ const Profile = () => {
       </div>
       <div id="featuredprojects">
         <h4 style={{ color: "#04d9ff", fontFamily: 'Share Tech Mono, monospace', margin: 0 }}>Featured Projects</h4>
+        <div className={classes.root}>
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={7}>
+              <Link to="https://gjagnoor.github.io/editor/">
+                <img src={proj1} className="projimg" />
+              </Link>
+            </Grid>
+            <Grid item xs={12} sm={5} style={{display: "flex", flexDirection:"column"}}>
+              <div>
+                <h5 className="projheading1">EDITOR</h5>
+              </div>
+              <div>
+                <p className="projdesc1">Created a versatile code editor for JS that runs in the browser. Allows auto-indentation, intellisense, and in-browser execution of code</p>
+              </div>
+              <div>
+                <p className="projlangs">React . Code Mirror . HTML . CSS/SCSS . Material-UI</p>
+              </div>
+            </Grid>
+          </Grid>
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={5} style={{display: "flex", flexDirection:"column"}}>
+              <div>
+                <h5 className="projheading2">Aaria-cli</h5>
+              </div>
+              <div>
+                <p className="projdesc2">Command line tool - A recursive directory/file listing program that produces a depth indented listing of folders/files</p>
+              </div>
+              <div>
+                <p className="projlangs">Nodejs . Child_Process . Chalk . Figlet</p>
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={7}>
+              <Link to="https://www.npmjs.com/package/aaria-cli">
+                <img src={aariacli} className="projimg" width="120%" />
+              </Link>
+            </Grid>
+          </Grid>
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={7}>
+              <Link to="https://gjagnoor.github.io/portfolio/">
+                <img src={portfolio} className="projimg" width="120%" />
+              </Link>
+            </Grid>
+            <Grid item xs={12} sm={5} style={{display: "flex", flexDirection:"column"}}>
+              <div>
+                <h5 className="projheading1">Portfolio</h5>
+              </div>
+              <div>
+                <p className="projdesc1">A personal website showcasing my life and passion projects</p>
+              </div>
+              <div>
+                <p className="projlangs">Gatsby . React . GraphQL . Typewriter-effect . Material-UI</p>
+              </div>
+            </Grid>
+          </Grid>
+        </div>
       </div>
       <div id="contact">
-        <h5>contact</h5>
+        <h4 style={{ color: "#04d9ff", fontFamily: 'Share Tech Mono, monospace', margin: 0, textAlign: "center", fontSize: `3em` }}>Get In Touch</h4>
+        <p style={{ color: "#3ce397", textAlign: "center", marginTop: "5em"}}>grewal.jagnoor@gmail.com</p>
       </div>
     </Layout>
   )
