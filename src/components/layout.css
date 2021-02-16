@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -6,12 +8,12 @@ html {
   overflow-y: scroll;
 }
 body {
-  background-color: #1b2934;
+  background-color: #0e1a2d;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: 'Share Tech Mono', monospace;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -602,9 +604,106 @@ pre tt:after {
   font-size: 4em;
   font-family: monospace;
   margin-left: 5em;
-  margin-top: 5em;
+  margin-top: 3em;
+  color: #04d9ff;
 }
 
-footer {
-  margin-top: 5em;
+#position {
+  margin-top: 4rem;
+  width: 120%;
+}
+
+#positiontext {
+  font-size: 5em;
+  font-family: 'Share Tech Mono', monospace;
+  background: -webkit-linear-gradient(#00a1ff, #00ff8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#enter {
+  margin-top: 3em;
+}
+
+.link {
+  border: 1px solid #04d9ff;
+  border-radius: 20%;
+  background: transparent;
+  color: #04d9ff;
+  padding: 1.3em;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-left: 22em;
+  font-family: 'Share Tech Mono', monospace;
+  text-decoration: none;
+}
+
+
+.link_ {
+  border: 1px solid #04d9ff;
+  border-radius: 20%;
+  background: transparent;
+  color: #04d9ff;
+  padding: 1.3em;
+  padding-left: 3em;
+  padding-right: 3em;
+  font-family: 'Share Tech Mono', monospace;
+  text-decoration: none;
+}
+
+.link_:hover {
+  cursor: pointer;
+}
+
+#link:hover {
+  cursor: pointer;
+}
+
+header {
+  margin-top: 1em;
+  white-space: nowrap;
+}
+
+.nav {
+  font-family: 'Share Tech Mono', monospace;
+  color: white;
+}
+
+#languages h6 {
+  white-space: nowrap;
+}
+
+#about {
+  margin-top: 10em;
+  margin-bottom: 5em;
+}
+
+#about h3 {
+  font-size: 3em;
+  line-height: 0.9;
+}
+
+#workexperience {
+  margin-top: 20em;
+}
+
+.step {
+  text-decoration: none;
+}
+
+.step:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.workcontent {
+  margin: 0;
+}
+
+#featuredprojects {
+  margin-top: 10em;
+}
+
+#contact {
+  margin-top: 10em;
 }
