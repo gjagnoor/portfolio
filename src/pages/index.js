@@ -11,7 +11,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div style={{display: "flex", flexDirection: "column", marginTop: "2vw", alignItems: "center"}}>
+      <div style={{display: "flex", flexDirection: "column", alignItems: "center", padding: "4vw", overflowY: "hidden"}}>
       <center>
         <div id="name">
           <Typewriter
@@ -41,7 +41,7 @@ const IndexPage = () => {
       </center>
       <center>
         <div id="languages">
-          <h6 style={{fontSize: "2vw"}}> Node.js . Express . React . Cypress . Firebase/Firestore . Socket.io . Agora . Webpack . Babel . Material-UI . Stripe . Gatsby . HTML . CSS/SCSS . PDFTron </h6>
+          <h6 style={{fontSize: "1em", fontFamily: "Share Tech Mono, monospace"}}> Node.js . Express . React . Cypress . Firebase/Firestore . Socket.io . Agora . Webpack . Babel . Material-UI . Stripe . Gatsby . HTML . CSS/SCSS . PDFTron </h6>
         </div>
       </center>
       <center>

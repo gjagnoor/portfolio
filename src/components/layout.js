@@ -12,20 +12,23 @@ import "./layout.css"
 const Layout = ({ children }) => {
 
   return (
-    <>
+    <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
       <div
         className="vertical-center"
         style={{
-          margin: `0 auto`,
-          padding: `5vw`,
+          // don't remove the padding it affects the profile page man
+          padding: "6vw",
           maxWidth: 1400,
+          display: "flex",
+          flexDirection: "column",
+          // border: '1px solid white'
         }}
       >
         <main>{children}</main>
         <footer
           // className="vertical-center_"
           style={{
-            marginTop: `6vw`,
+            marginTop: `1em`,
             textAlign: "center",
             color: `#04d9ff`,
           }}
@@ -35,7 +38,7 @@ const Layout = ({ children }) => {
           ♥ by Noor Grewal
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 

@@ -214,7 +214,7 @@ const Profile = () => {
                       onClick={handleStep(index)}
                       className={classes.stepButton}
                     >
-                      <StepLabel StepIconComponent={QontoStepIcon}><p style={{color: "white", marginTop: "1.4em", fontFamily: 'Share Tech Mono, monospace', color: (activeStep === index ? "#04d9ff" : "gray")}}><span style={{color: "#04d9ff", fontFamily: "Share Tech Mono, monospace"}}>0{index}. </span>{label}</p></StepLabel>
+                      <StepLabel StepIconComponent={QontoStepIcon}><p style={{color: "white", marginTop: "1.4em", fontFamily: 'Share Tech Mono, monospace', color: (activeStep === index ? "#04d9ff" : "gray"), fontSize: "1vw"}}><span style={{color: "#04d9ff", fontFamily: "Share Tech Mono, monospace"}}>0{index}. </span>{label}</p></StepLabel>
                     </StepButton>
                     <StepContent style={{color: "gray"}}>
                       {getStepContent(activeStep)}
@@ -289,7 +289,7 @@ const Profile = () => {
       </div>
       <center>
         <div id="contact">
-          <h4 style={{ color: "#04d9ff", fontFamily: 'Share Tech Mono, monospace', margin: 0, textAlign: "center", fontSize: `3em` }}>Get In Touch</h4>
+          <h4 style={{ color: "#04d9ff", fontFamily: 'Share Tech Mono, monospace', margin: 0, textAlign: "center" }}>Get In Touch</h4>
           <p id="email" style={{ color: "#3ce397", textAlign: "center", marginTop: "5em"}}>grewal.jagnoor@gmail.com</p>
         </div>
         </center>

@@ -3,7 +3,6 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-size: 1.5vw;
   box-sizing: border-box;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -11,7 +10,6 @@ html {
 body {
   background-color: #0e1a2d;
   line-height: 2 !important;
-  font-size: 2vw !important;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -95,7 +93,6 @@ h1 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
   line-height: 1.1;
 }
 mark {
@@ -103,7 +100,7 @@ mark {
   color: #000;
 }
 small {
-  font-size: 80%;
+  font-size: 1.4em;
 }
 sub,
 sup {
@@ -274,7 +271,6 @@ h2 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
   line-height: 1.1;
 }
 h3 {
@@ -291,7 +287,6 @@ h3 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
   line-height: 1.1;
 }
 h4 {
@@ -308,7 +303,6 @@ h4 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1rem;
   line-height: 1.1;
 }
 h5 {
@@ -325,7 +319,6 @@ h5 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 0.85028rem;
   line-height: 1.1;
 }
 h6 {
@@ -342,7 +335,6 @@ h6 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 0.78405rem;
   line-height: 1.1;
 }
 hgroup {
@@ -414,7 +406,6 @@ pre {
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 1.45rem;
-  font-size: 0.85rem;
   line-height: 1.42;
   background: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
@@ -601,26 +592,6 @@ pre tt:after {
   content: "";
 }
 
-#name {
-  font-size: 4vw;
-  font-family: monospace;
-  margin: 0 auto;
-  color: #04d9ff;
-}
-
-#position {
-  margin-top: 4vw;
-}
-
-#positiontext {
-  font-size: 5vw;
-  font-family: 'Share Tech Mono', monospace;
-  background: -webkit-linear-gradient(#00a1ff, #00ff8f);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  white-space: nowrap;
-}
-
 #line {
   border: 1px solid #3ce397;
 }
@@ -645,8 +616,9 @@ pre tt:after {
   margin: 0;
   position: absolute;
   overflow-y: scroll;
-  top: 30%;
+  top: 20%;
 }
+
 
 .link_ {
   border: 1px solid #04d9ff;
@@ -668,11 +640,6 @@ pre tt:after {
   cursor: pointer;
 }
 
-header {
-  margin-top: 1em;
-  white-space: nowrap;
-}
-
 .nav {
   font-family: 'Share Tech Mono', monospace;
   color: white;
@@ -692,6 +659,10 @@ header {
 #about h3 {
   font-size: 3em;
   line-height: 0.9;
+}
+
+#about p {
+  font-size: 1em;
 }
 
 #workexperience {
@@ -738,6 +709,7 @@ header {
 
 .projdesc1 {
   float: left;
+  font-size: 1em;
 }
 
 .projlangs {
@@ -753,10 +725,55 @@ header {
 
 .projdesc2 {
   float: right;
+  font-size: 1vw;
 }
 
 #email:hover {
   border: 1px dashed #3ce397;
   padding: 2%;
   width: fit-content;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.5em !important;
+}
+
+p {
+  font-size: 1em !important;
+}
+
+div {
+  font-size: 1em !important;
+}
+
+#contact h4 {
+  font-size: 3em !important;
+}
+
+#about h3 {
+  font-size: 3em !important;
+}
+
+#languages h6 {
+  font-size: 1em !important;
+}
+
+#name {
+  font-size: 4vw !important;
+  font-family: monospace;
+  margin: 0 auto;
+  color: #04d9ff;
+}
+
+#position {
+  margin-top: 4vw !important;
+}
+
+#positiontext {
+  font-size: 5vw !important;
+  font-family: 'Share Tech Mono', monospace;
+  background: -webkit-linear-gradient(#00a1ff, #00ff8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
