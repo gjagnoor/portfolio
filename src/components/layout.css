@@ -6,6 +6,7 @@ html {
   box-sizing: border-box;
   overflow-y: scroll;
   overflow-x: hidden;
+  height: 100%;
 }
 body {
   background-color: #0e1a2d !important;
@@ -24,6 +25,7 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
   overflow-x: hidden;
   overflow-y: scroll;
+  height: 100%;
 
 }
 article,
@@ -597,7 +599,8 @@ pre tt:after {
 }
 
 #enter {
-  margin-top: 3vw;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .link {

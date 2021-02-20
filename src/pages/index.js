@@ -11,7 +11,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div style={{display: "flex", flexDirection: "column", alignItems: "center", padding: "4vw", overflowY: "hidden"}}>
+      <div style={{display: "flex", flexDirection: "column", alignItems: "center", overflowY: "hidden"}}>
       <center>
         <div id="name">
           <Typewriter
