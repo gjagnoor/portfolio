@@ -8,13 +8,13 @@ html {
   overflow-x: hidden;
 }
 body {
-  background-color: #0e1a2d;
+  background-color: #0e1a2d !important;
   line-height: 2 !important;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Share Tech Mono', monospace !important;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -776,4 +776,10 @@ div {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
+}
+
+li::marker {
+  content: "\1405 ";
+  color: #04d9ff;
+  margin: 0.2em;
 }

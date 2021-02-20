@@ -41,7 +41,7 @@ const IndexPage = () => {
       </center>
       <center>
         <div id="languages">
-          <h6 style={{fontSize: "1em", fontFamily: "Share Tech Mono, monospace"}}> Node.js . Express . React . Cypress . Firebase/Firestore . Socket.io . Agora . Webpack . Babel . Material-UI . Stripe . Gatsby . HTML . CSS/SCSS . PDFTron </h6>
+          <h6 style={{fontSize: "1em", fontFamily: "Share Tech Mono, monospace"}}> Node.js . GraphQL . Express . React . Cypress . Firebase/Firestore . Socket.io . Agora . Webpack . Babel . Material-UI . Stripe . Gatsby . HTML . CSS/SCSS . PDFTron </h6>
         </div>
       </center>
       <center>
