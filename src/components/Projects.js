@@ -60,7 +60,7 @@ const Profile = () => {
                                     <React.Fragment>
                                         <Grid container spacing={3}>
                                             <Grid item xs={12} sm={7}>
-                                                <Link to={node.frontmatter.link}>
+                                                <Link to={node.frontmatter.link} target="_blank">
                                                       <img src={images[node.frontmatter.position]} className="projimg" />
                                                 </Link>
                                             </Grid>
@@ -77,12 +77,12 @@ const Profile = () => {
                                                   <center>
                                                         <div style={{display: "flex", padding: "3em", margin:0}}>
                                                             <div>
-                                                                <Link to={node.frontmatter.github} style={{textDecoration: "none", color: "#04d9ff", cursor: "pointer"}}>        
+                                                                <Link to={node.frontmatter.github} style={{textDecoration: "none", color: "#04d9ff", cursor: "pointer"}} target="_blank">        
                                                                   <FontAwesomeIcon icon={ faGithubAlt } size="2x"  style={{margin: "0em 2em 0em 3em"}}></FontAwesomeIcon>
                                                                 </Link>
                                                             </div> 
                                                           <div>
-                                                                <Link to={node.frontmatter.link} style={{textDecoration: "none", color: "#04d9ff", cursor: "pointer"}}>
+                                                                <Link to={node.frontmatter.link} style={{textDecoration: "none", color: "#04d9ff", cursor: "pointer"}} target="_blank">
                                                                   <FontAwesomeIcon icon={faExternalLinkAlt} size="2x" style={{margin: "0em 2em 0em 0em"}}/>
                                                                 </Link>
                                                             </div>
@@ -108,12 +108,12 @@ const Profile = () => {
                                                       <center>
                                                         <div style={{display: "flex", padding: "3em", margin:0}}>
                                                             <div>
-                                                                <Link to={node.frontmatter.github} style={{textDecoration: "none", color: "#04d9ff", cursor: "pointer"}}>        
+                                                                <Link to={node.frontmatter.github} style={{textDecoration: "none", color: "#04d9ff", cursor: "pointer"}} target="_blank">        
                                                                   <FontAwesomeIcon icon={ faGithubAlt } size="2x"  style={{margin: "0em 2em 0em 3em"}}></FontAwesomeIcon>
                                                                 </Link>
                                                             </div> 
                                                           <div>
-                                                                <Link to={node.frontmatter.link} style={{textDecoration: "none", color: "#04d9ff", cursor: "pointer"}}>
+                                                                <Link to={node.frontmatter.link} style={{textDecoration: "none", color: "#04d9ff", cursor: "pointer"}} target="_blank">
                                                                   <FontAwesomeIcon icon={faExternalLinkAlt} size="2x" style={{margin: "0em 2em 0em 0em"}}/>
                                                                 </Link>
                                                             </div>
@@ -121,7 +121,7 @@ const Profile = () => {
                                                   </center>
                                             </Grid>
                                             <Grid item xs={12} sm={7}>
-                                                <Link to={node.frontmatter.link}>
+                                                <Link to={node.frontmatter.link} target="_blank">
                                                     <img src={images[node.frontmatter.position]} className="projimg" width="120%" />
                                                 </Link>
                                             </Grid>

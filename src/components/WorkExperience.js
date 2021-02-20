@@ -160,13 +160,44 @@ const Profile = () => {
                                   </StepButton>
                                   <StepContent style={{ color: "gray" }}>
                                         <div>
-                                            <p className="workcontent">
-                                                <span style={{ color: "white" }}>
-                                                    {data.allMarkdownRemark.edges[index].node.frontmatter.role}
-                                                </span>
-                                                <span style={{ color: "#04d9ff" }}>
-                                                    {`${data.allMarkdownRemark.edges[index].node.frontmatter.company === "On leave due to a family emergency" ? " " : ` @ ${data.allMarkdownRemark.edges[index].node.frontmatter.company}`}`}
-                                                </span>
+                                              <p className="workcontent">
+                                    {data.allMarkdownRemark.edges[index].node.frontmatter.company === "UC Berkeley" ? (
+                                      <React.Fragment>
+                                        <div>
+                                        <span style={{ color: "white" }}>
+                                          {`${data.allMarkdownRemark.edges[index].node.frontmatter.role1}`}
+                                          </span>
+                                          <span style={{ color: "#04d9ff" }}>
+                                          {` @ ${data.allMarkdownRemark.edges[index].node.frontmatter.company}`}
+                                          </span>
+                                          <span>
+                                          {`, ${data.allMarkdownRemark.edges[index].node.frontmatter.period1}`}
+                                          </span>
+                                        </div>
+                                        <div>
+                                        <span style={{ color: "white" }}>
+                                            {data.allMarkdownRemark.edges[index].node.frontmatter.role2}
+                                          </span>
+                                          <span style={{ color: "#04d9ff" }}>
+                                          {` @ ${data.allMarkdownRemark.edges[index].node.frontmatter.company}`}
+                                          </span>
+                                          <span>
+                                          {`, ${data.allMarkdownRemark.edges[index].node.frontmatter.period2}`}
+                                          </span>
+                                        </div>
+                                        
+                                      </React.Fragment>
+                                    ) : (
+                                      <React.Fragment>
+
+                                      <span style={{ color: "white" }}>
+                                      {data.allMarkdownRemark.edges[index].node.frontmatter.role}
+                                  </span>
+                                  <span style={{ color: "#04d9ff" }}>
+                                      {`${data.allMarkdownRemark.edges[index].node.frontmatter.company === "On leave due to a family emergency" ? " " : ` @ ${data.allMarkdownRemark.edges[index].node.frontmatter.company}`}`}
+                                  </span>
+                                          </React.Fragment>
+                                              ) }
                                             </p>
                                             <p>
                                                 {data.allMarkdownRemark.edges[index].node.frontmatter.period}

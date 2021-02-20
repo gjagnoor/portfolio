@@ -6,6 +6,9 @@ import About from "../components/About.js";
 import WorkExperience from "../components/WorkExperience.js";
 import Projects from "../components/Projects.js";
 import Drawer from "../components/Drawer.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithubAlt, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "gatsby";
 
 
 
@@ -50,7 +53,15 @@ const Profile = () => {
           <center>
             <div id="contact">
               <h4 style={{ color: "#04d9ff", fontFamily: 'Share Tech Mono, monospace', margin: 0, textAlign: "center" }}>Get In Touch</h4>
-              <p id="email" style={{ color: "#3ce397", textAlign: "center", marginTop: "5em"}}>grewal.jagnoor@gmail.com</p>
+              <p style={{ color: "#3ce397", textAlign: "center", marginTop: "5em" }}>grewal.jagnoor@gmail.com</p>
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <Link to="https://www.linkedin.com/in/noorgrewal/" style={{color: "#04d9ff"}} target="_blank">
+                  <FontAwesomeIcon icon={faLinkedin} size="2x" style={{ margin: "1em" }} />
+                </Link>
+                <Link to="https://github.com/gjagnoor" style={{color: "#04d9ff"}} target="_blank">
+                  <FontAwesomeIcon icon={faGithubAlt} size="2x" style={{ margin: "1em" }} />
+                </Link>
+              </div>
             </div>
             </center>
           </div>

@@ -8,4 +8,4 @@ link: "https://gjagnoor.github.io/portfolio/"
 github: "https://github.com/gjagnoor/portfolio"
 ---
 
-A personal website showcasing my life and passion projects
+A personal website showcasing my life and passion projects. You are already here :)
