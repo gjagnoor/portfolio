@@ -6,6 +6,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import editor from "../images/editor.png";
 import aaria from "../images/aaria.png";
 import portfolio from "../images/portfolio.png"
+import github from "../images/github.png";
+import open from "../images/open.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -67,7 +73,21 @@ const Profile = () => {
                                                 </div>
                                                 <div>
                                                       <p className="projlangs">{ node.frontmatter.technologies }</p>
-                                                </div>
+                                                  </div>
+                                                  <center>
+                                                        <div style={{display: "flex", padding: "3em", margin:0}}>
+                                                            <div>
+                                                                <Link to={node.frontmatter.github} style={{textDecoration: "none", color: "#04d9ff", cursor: "pointer"}}>        
+                                                                  <FontAwesomeIcon icon={ faGithubAlt } size="2x"  style={{margin: "0em 2em 0em 3em"}}></FontAwesomeIcon>
+                                                                </Link>
+                                                            </div> 
+                                                          <div>
+                                                                <Link to={node.frontmatter.link} style={{textDecoration: "none", color: "#04d9ff", cursor: "pointer"}}>
+                                                                  <FontAwesomeIcon icon={faExternalLinkAlt} size="2x" style={{margin: "0em 2em 0em 0em"}}/>
+                                                                </Link>
+                                                            </div>
+                                                        </div>
+                                                  </center>
                                             </Grid>
                                         </Grid>
                                         <hr id="line" />
@@ -84,7 +104,21 @@ const Profile = () => {
                                                 </div>
                                                 <div>
                                                     <p className="projlangs">{node.frontmatter.technologies}</p>
-                                                </div>
+                                                      </div>
+                                                      <center>
+                                                        <div style={{display: "flex", padding: "3em", margin:0}}>
+                                                            <div>
+                                                                <Link to={node.frontmatter.github} style={{textDecoration: "none", color: "#04d9ff", cursor: "pointer"}}>        
+                                                                  <FontAwesomeIcon icon={ faGithubAlt } size="2x"  style={{margin: "0em 2em 0em 3em"}}></FontAwesomeIcon>
+                                                                </Link>
+                                                            </div> 
+                                                          <div>
+                                                                <Link to={node.frontmatter.link} style={{textDecoration: "none", color: "#04d9ff", cursor: "pointer"}}>
+                                                                  <FontAwesomeIcon icon={faExternalLinkAlt} size="2x" style={{margin: "0em 2em 0em 0em"}}/>
+                                                                </Link>
+                                                            </div>
+                                                        </div>
+                                                  </center>
                                             </Grid>
                                             <Grid item xs={12} sm={7}>
                                                 <Link to={node.frontmatter.link}>
