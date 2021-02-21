@@ -136,7 +136,7 @@ const Profile = () => {
     }
   return (
       <div id="workexperience">
-        <h4 style={{color: "#04d9ff", fontFamily: 'Share Tech Mono, monospace', margin: 0}}>Work Experience</h4>
+        <h4 style={{color: "#04d9ff", fontFamily: 'Share Tech Mono, monospace', margin: "2em"}}>Work Experience</h4>
         <div className={classes.root}>
               <Stepper nonLinear activeStep={activeStep} orientation="vertical" style={{ backgroundColor: "transparent" }} connector={<QontoConnector />}>
                   {

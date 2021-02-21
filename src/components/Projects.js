@@ -48,7 +48,7 @@ const Profile = () => {
     const classes = useStyles();
   return (
     <div id="featuredprojects">
-        <h4 style={{ color: "#04d9ff", fontFamily: 'Share Tech Mono, monospace', margin: 0 }}>Featured Projects</h4>
+        <h4 style={{ color: "#04d9ff", fontFamily: 'Share Tech Mono, monospace', margin: "2em" }}>Featured Projects</h4>
           <div className={classes.root}>
               {
                   data.allMarkdownRemark.edges.map(({ node }) => {

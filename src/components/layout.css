@@ -26,6 +26,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   height: 100%;
+  margin: 7em !important;
 
 }
 article,
@@ -655,8 +656,7 @@ pre tt:after {
 }
 
 #about {
-  margin-top: 10vw;
-  margin-bottom: 5vw;
+  padding: 2em;
 }
 
 #about h3 {

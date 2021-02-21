@@ -29,7 +29,8 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.leavingScreen,
     }),
     backgroundColor: "#0e1a2d",
-    color: "#04d9ff"
+      color: "#04d9ff",
+    //   width: 370
     
   },
   appBarShift: {
@@ -54,10 +55,10 @@ const useStyles = makeStyles((theme) => ({
       fontFamily: "Share Tech Mono, monospace"
   },
   drawerPaper: {
-      width: drawerWidth,
+    //   width: drawerWidth,
       backgroundColor: "#0e1a2d",
       color: "#04d9ff",
-      fontFamily: "Share Tech Mono, monospace"
+      fontFamily: "Share Tech Mono, monospace",
   },
   drawerHeader: {
     display: 'flex',
@@ -69,21 +70,21 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flexGrow: 1,
-    // padding: theme.spacing(3),
+    // padding: theme.spacing(7),
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
       margin: "auto",
       fontFamily: "Share Tech Mono, monospace",
-      fontSize: "1.2em"
+      fontSize: "1.2em",
   },
   contentShift: {
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
     }),
-      marginRight: 0,
+      margin: 0,
     textAlign: "center"
   },
 }));
@@ -109,6 +110,7 @@ export default function PersistentDrawerRight({children}) {
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
+        xs={12}
       >
         <Toolbar>
           <Typography variant="h6" noWrap className={classes.title}>
