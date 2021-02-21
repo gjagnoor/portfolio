@@ -782,7 +782,7 @@ div {
 }
 
 li::marker {
-  content: "\1405 ";
+  content: "▸ ";
   color: #04d9ff;
   margin: 0.2em;
 }
