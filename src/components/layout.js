@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
         className="vertical-center"
         style={{
           // don't remove the padding it affects the profile page man
-          padding: "0em 1em 0em 1em",
+          // padding: "0em 1em 0em 1em",
           maxWidth: 1400,
           display: "flex",
           flexDirection: "column",
