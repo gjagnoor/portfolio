@@ -69,7 +69,7 @@ const Profile = () => {
                                                       <h5 className="projheading1">{ node.frontmatter.name }</h5>
                                                 </div>
                                                 <div>
-                                                    <p className="projdesc1" dangerouslySetInnerHTML={{ __html: node.html }}></p>
+                                                    <div className="projdesc1" dangerouslySetInnerHTML={{ __html: node.html }}></div>
                                                 </div>
                                                 <div>
                                                       <p className="projlangs">{ node.frontmatter.technologies }</p>
@@ -100,7 +100,7 @@ const Profile = () => {
                                                     <h5 className="projheading2">{ node.frontmatter.name }</h5>
                                                 </div>
                                                 <div>
-                                                    <p className="projdesc2" dangerouslySetInnerHTML={{ __html: node.html }}></p>
+                                                    <div className="projdesc2" dangerouslySetInnerHTML={{ __html: node.html }}></div>
                                                 </div>
                                                 <div>
                                                     <p className="projlangs">{node.frontmatter.technologies}</p>
