@@ -6,8 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import editor from "../images/editor.png";
 import aaria from "../images/aaria.png";
 import portfolio from "../images/portfolio.png"
-import github from "../images/github.png";
-import open from "../images/open.png"
+import chalkWebpack from "../images/Coming-Soon.jpeg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
@@ -37,6 +36,7 @@ const Profile = () => {
                     type
                     imgURL
                     link
+                    github
                   }
                   html
                 }
@@ -52,7 +52,7 @@ const Profile = () => {
           <div className={classes.root}>
               {
                   data.allMarkdownRemark.edges.map(({ node }) => {
-                      let images = [editor, aaria, portfolio]
+                      let images = [editor, aaria, portfolio, chalkWebpack]
                       return (
                         <React.Fragment>
                             {
@@ -136,25 +136,6 @@ const Profile = () => {
                       )
                   })
               }
-       
-            {/* <Grid container spacing={3}>
-                <Grid item xs={12} sm={7}>
-                    <Link to="https://gjagnoor.github.io/portfolio/">
-                        <img src={portfolio} className="projimg" width="120%" />
-                    </Link>
-                </Grid>
-                <Grid item xs={12} sm={5} style={{display: "flex", flexDirection:"column"}}>
-                    <div>
-                        <h5 className="projheading1">Portfolio</h5>
-                    </div>
-                    <div>
-                        <p className="projdesc1">A personal website showcasing my life and passion projects</p>
-                    </div>
-                    <div>
-                        <p className="projlangs">Gatsby . React . GraphQL . Typewriter-effect . Material-UI</p>
-                    </div>
-                </Grid>
-            </Grid> */}
         </div>
     </div>
   )

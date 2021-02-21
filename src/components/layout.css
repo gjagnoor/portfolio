@@ -695,7 +695,7 @@ pre tt:after {
 }
 
 .projimg {
-  width: 120%;
+  width: 40em;
   border: 1px dashed #3ce397;
   padding: 2%;
 }
