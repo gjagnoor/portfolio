@@ -10,9 +10,10 @@ import PropTypes from "prop-types"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-
   return (
-    <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
       <div
         className="vertical-center"
         style={{
@@ -34,8 +35,7 @@ const Layout = ({ children }) => {
           }}
         >
           © {new Date().getFullYear()}, Built with
-          {` `}
-          ♥ by Noor Grewal
+          {` `}♥ by Noor Grewal
         </footer>
       </div>
     </div>
