@@ -13,7 +13,7 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: "100%",
+    width: "95%",
     fontSize: `0.8em`,
     flexGrow: 1,
     marginTop: `5%`,
@@ -89,6 +89,7 @@ const Profile = () => {
                         <div
                           className="projdesc1"
                           dangerouslySetInnerHTML={{ __html: node.html }}
+                          style={{ marginLeft: "1em" }}
                         ></div>
                       </div>
                       <div>
@@ -158,6 +159,7 @@ const Profile = () => {
                         <div
                           className="projdesc2"
                           dangerouslySetInnerHTML={{ __html: node.html }}
+                          style={{ marginLeft: "1em" }}
                         ></div>
                       </div>
                       <div>

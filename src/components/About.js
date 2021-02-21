@@ -10,7 +10,7 @@ const About = () => {
           <h3 style={{ fontFamily: "Share Tech Mono, monospace" }}>
             I build things for the web.
           </h3>
-          <p style={{ margin: "2em" }}>
+          <p>
             Hello, I'm a software engineer based in NY. My passion for software
             lies with dreaming up ideas and making them come true with elegant
             interfaces. I specialize in building web applications and websites

@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     width: "100%",
     fontSize: `0.8em`,
     flexGrow: 1,
-    marginTop: `5%`,
+    // marginTop: `5%`,
   },
   button: {
     marginRight: theme.spacing(1),
@@ -178,24 +178,31 @@ const Profile = () => {
                         fontFamily: "Share Tech Mono, monospace",
                         color: activeStep === index ? "#04d9ff" : "gray",
                         fontSize: `1.2em`,
-                        whiteSpace: "nowrap",
+                        textAlign: "left",
                       }}
                     >
                       <span
                         style={{
                           color: "#04d9ff",
                           fontFamily: "Share Tech Mono, monospace",
+                          marginLeft: `${
+                            index % 2 !== 0 && index !== 5 ? "-2em" : 0
+                          }`,
                         }}
                       >
                         {index === 5 ? `★ ` : `0${index}.`}
                       </span>
                       {label}
-                      <span>
-                        {" "}
-                        .{" "}
-                        {`${data.allMarkdownRemark.edges[index].node.frontmatter.period}`}
-                      </span>
                     </span>
+                    <p
+                      style={{
+                        textAlign: "left",
+                        fontFamily: "Share Tech Mono, monospace",
+                        color: "white",
+                      }}
+                    >
+                      {`${data.allMarkdownRemark.edges[index].node.frontmatter.period}`}
+                    </p>
                   </StepLabel>
                 </StepButton>
                 <StepContent style={{ color: "gray" }}>
