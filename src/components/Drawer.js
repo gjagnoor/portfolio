@@ -33,12 +33,12 @@ const useStyles = makeStyles(theme => ({
     //   width: 370
   },
   appBarShift: {
-    width: `calc(100% - ${drawerWidth}px)`,
+    // width: `calc(100% - ${drawerWidth}px)`,
     transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
     }),
-    marginRight: drawerWidth,
+    // margin: drawerWidth,
   },
   title: {
     flexGrow: 1,
@@ -84,7 +84,6 @@ const useStyles = makeStyles(theme => ({
       duration: theme.transitions.duration.enteringScreen,
     }),
     margin: 0,
-    textAlign: "center",
   },
 }))
 
