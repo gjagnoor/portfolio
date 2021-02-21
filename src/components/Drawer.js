@@ -152,7 +152,7 @@ export default function PersistentDrawerRight({children}) {
         <List>
             {
                 ['About', 'Work Experience', 'Featured Projects', 'Contact', 'Resume'].map((text, index) => (
-                    <a href={ text !== "Resume" ? `/profile#${text.split(' ').join('').toLowerCase()}` : `https://drive.google.com/file/d/1ta6t3ewzs0lFxt740RxNtoS9HhtMOo11/view?usp=sharing`} style={{ textDecoration: "none", color: "inherit" }} target="_blank">
+                    <a href={text !== "Resume" ? `/profile#${text.split(' ').join('').toLowerCase()}` : `https://drive.google.com/file/d/1ta6t3ewzs0lFxt740RxNtoS9HhtMOo11/view?usp=sharing`} style={{ textDecoration: "none", color: "inherit" }} target={`${text === "Resume" ? "_blank" : ""}`}>
                         {
                             text === "Resume" ? <p style={{ padding: "2em", textAlign: "center", cursor: "pointer", border: "1px solid #04d9ff", padding: "0.9em", margin: "4em", borderRadius: "25%" }}>{text}</p> : <p style={{ padding: "2em", textAlign: "center", cursor: "pointer" }}>{text}</p>
                         }
