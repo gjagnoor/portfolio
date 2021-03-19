@@ -68,7 +68,7 @@ const Profile = () => {
                   marginTop: "5em",
                 }}
               >
-                grewal.jagnoor@gmail.com
+                noor.grewal@berkeley.edu
               </p>
               <div style={{ display: "flex", justifyContent: "center" }}>
                 <Link

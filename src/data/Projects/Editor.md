@@ -8,4 +8,4 @@ link: "https://gjagnoor.github.io/editor/"
 github: "https://github.com/gjagnoor/editor"
 ---
 
-Created a versatile code editor for JS that runs in the browser. Allows auto-indentation, intellisense, and in-browser execution of code
+Created versatile code editor that runs in the browser. Allows auto-indentation, intellisense, and in-browser execution of code (Developer tool, Codepen clone)

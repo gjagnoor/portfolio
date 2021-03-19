@@ -8,4 +8,4 @@ link: "https://www.npmjs.com/package/aaria-cli"
 github: "https://github.com/gjagnoor/aaria-cli"
 ---
 
-Command line tool - A recursive directory/file listing program that produces a depth indented listing of folders/files
+200+ downloads in 13 days. A recursive directory/file listing program that produces a depth indented listing of folders/files (Command Line Tool)
