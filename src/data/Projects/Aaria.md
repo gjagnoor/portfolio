@@ -9,4 +9,3 @@ github: "https://github.com/gjagnoor/aaria-cli"
 ---
 
 Recursive directory/file listing program that produces depth indented listing of folders/files (500+ downloads)
-

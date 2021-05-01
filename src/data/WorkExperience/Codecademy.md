@@ -8,5 +8,4 @@ type: "workexperience"
 
 - Partnered with release management and quality assurance team to deliver high value offerings to the market (Python, linear regression, SQL)
 
-- Designed interactive visualizations for machine learning concepts (Python, linear regression) 
-
+- Designed interactive visualizations for machine learning concepts (Python, linear regression)
