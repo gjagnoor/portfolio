@@ -6,8 +6,7 @@ period: "May 2018 - Aug 2018"
 type: "workexperience"
 ---
 
-- Developed course work and projects for the data science team. Got excellent feedback
+- Partnered with release management and quality assurance team to deliver high value offerings to the market (Python, linear regression, SQL)
 
-- Provided technical support by fixing bugs
+- Designed interactive visualizations for machine learning concepts (Python, linear regression) 
 
-- Assisted with hiring developers for curriculum’s data science and web development team

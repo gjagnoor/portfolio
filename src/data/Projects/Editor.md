@@ -8,4 +8,4 @@ link: "https://gjagnoor.github.io/editor/"
 github: "https://github.com/gjagnoor/editor"
 ---
 
-Created versatile code editor that runs in the browser. Allows auto-indentation, intellisense, and in-browser execution of code (Developer tool, Codepen clone)
+Online editor that allows new front-end developers to create HTML5, CSS3, and JavaScript/jQuery code snippets and see results in real time

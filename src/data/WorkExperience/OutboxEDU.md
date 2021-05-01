@@ -6,17 +6,17 @@ period: "May 2020 - Present"
 type: "workexperience"
 ---
 
-- Lead web development team using agile development techniques in building our core product - learning management system that allows schools and teachers to teach in 3D learning space (React, CSS/SCSS, Firebase/Firestore, Express, Unity, Webpack, Babel, Socket.io, Material-UI, Stripe, PDFTron)
+- Enhanced overall product by building  ~80 market driven features, solving 100% of reported bugs, and developing 100% of requested features 
 
-- Implemented 80 features in one month and half. Solved 100% bugs reported by users and developed 100% features requested
+- Improved security and reduced source size by 2.3 GB (AWS - Codebuild, Codepipeline) by streamlining processes to build application during release
 
-- TDD and QA: Implemented end-to-end testing and automated 70+ test cases for our core platform (Cypress)
+- Built video experience to allow real time global communication, screen share, and help desk system. Supports < 1 million users  (Agora.io, Socket.io) 
 
-- CI/CD: Deployed web application to AWS Elastic Beanstalk, and configured SSL and HTTPS (Elastic Beanstalk, Amazon Route 53, Codepipeline)
+- Reduced management complexity (AWS - Elastic Beanstalk, Amazon Route 53, Codepipeline) by deploying app and configuring SSL and HTTPS 
 
-- Built payments platform to allow users to pay for products, ask for refunds, file disputes, and receive payouts (Google Cloud Functions, Stripe API)
+- Improved bug detection and application performance (Cypress) by implementing end-to-end testing and automating 70+ test cases
 
-- Built document solution that allows reading, editing, annotating, and saving documents in real time (React, PDFTron, SCSS, Firebase/Firestore)
+- Automated payments by developing payments system to handle refund requests, file disputes, and process payouts (Google Cloud Functions, Stripe)
 
-- Built an events calendar which allows students to view their upcoming assignments and deadlines (React-big-calendar, Material-UI)
-- Developed custom video experience that lets students and teachers communicate, share screen, raise hand, and answer help tickets in real time (React, Vonage, SCSS, Socket.io)
+- Improved efficiency of work submission, scoring, and tracking by creating a solution that allows annotating and saving documents online (PDFTron)
+
