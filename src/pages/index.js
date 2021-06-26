@@ -53,10 +53,9 @@ const IndexPage = () => {
               }}
             >
               {" "}
-              Javascript . HTML5 . CSS3/SCSS . Node.js . GraphQL . Express .
-              React . Cypress . Firebase/Firestore . Socket.io . Webpack . Babel
-              . Material-UI . Stripe API . Gatsby . PDFTron . Vonage . AWS .
-              Amazon Route 53 . Codepipeline . Redux . Google Cloud Functions{" "}
+              Javascript . HTML5 . CSS3/SCSS . Node.js . PostgreSQL . GraphQL .
+              Express . React . Redux . Firebase/Firestore . Stripe API . Gatsby
+              . AWS . Google Cloud Functions{" "}
             </h6>
           </div>
         </center>
