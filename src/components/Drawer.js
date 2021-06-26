@@ -171,7 +171,7 @@ export default function PersistentDrawerRight({ children }) {
                       .split(" ")
                       .join("")
                       .toLowerCase()}`
-                  : `https://drive.google.com/file/d/1rsfwS9Wm9wCxKzwOQgWbgqi69lB7yjW1/view?usp=sharing`
+                  : `https://drive.google.com/file/d/1M3t8mx_O7s6wNuAZeipqimlxzcjPhdZK/view?usp=sharing`
               }
               style={{ textDecoration: "none", color: "inherit" }}
               target={`${text === "Resume" ? "_blank" : ""}`}
