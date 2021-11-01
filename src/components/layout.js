@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import "./layout.css"
@@ -17,12 +10,9 @@ const Layout = ({ children }) => {
       <div
         className="vertical-center"
         style={{
-          // don't remove the padding it affects the profile page man
-          // padding: "0em 1em 0em 1em",
           maxWidth: 1400,
           display: "flex",
           flexDirection: "column",
-          // border: '1px solid white'
         }}
       >
         <main>{children}</main>
@@ -31,11 +21,11 @@ const Layout = ({ children }) => {
           style={{
             marginTop: `1em`,
             textAlign: "center",
-            color: `#04d9ff`,
+            color: `black`,
           }}
         >
           © {new Date().getFullYear()}, Built with
-          {` `}♥ by Noor Grewal
+          {` `} thought by Noor Grewal
         </footer>
       </div>
     </div>

@@ -21,7 +21,7 @@ const IndexPage = () => {
             <Typewriter
               onInit={typewriter => {
                 typewriter
-                  .typeString("noor grewal")
+                  .typeString("My Portfolio")
                   .callFunction(() => {
                     console.log("String typed out!")
                   })
@@ -41,7 +41,7 @@ const IndexPage = () => {
         </center>
         <center>
           <div id="position">
-            <h3 id="positiontext"> {` { Software Engineer }`}</h3>
+            <h3 id="positiontext"> {` FullStack Software Engineer `}</h3>
           </div>
         </center>
         <center>
@@ -52,17 +52,15 @@ const IndexPage = () => {
                 fontFamily: "Share Tech Mono, monospace",
               }}
             >
-              {" "}
-              Javascript . HTML5 . CSS3/SCSS . Node.js . PostgreSQL . GraphQL .
-              Express . React . Redux . Firebase/Firestore . Stripe API . Gatsby
-              . AWS . Google Cloud Functions{" "}
+              Fullstack JavaScript . HTML5/CSS3/SCSS . PostgreSQL/GraphQL .
+              React/Redux . Cloud Services . Payment Gateways . Gatsby
             </h6>
           </div>
         </center>
         <center>
           <div id="enter">
             <Link to="/profile" className="link">
-              <bold># ENTER</bold>
+              <bold> > </bold>
             </Link>
           </div>
         </center>

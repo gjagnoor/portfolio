@@ -19,7 +19,7 @@ const drawerWidth = 240
 const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
-    backgroundColor: "#0e1a2d",
+    backgroundColor: "white",
     justifyContent: "center",
     fontSize: "2em",
   },
@@ -28,9 +28,8 @@ const useStyles = makeStyles(theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    backgroundColor: "#0e1a2d",
-    color: "#04d9ff",
-    //   width: 370
+    backgroundColor: "white",
+    color: "black",
   },
   appBarShift: {
     // width: `calc(100% - ${drawerWidth}px)`,
@@ -50,12 +49,12 @@ const useStyles = makeStyles(theme => ({
   drawer: {
     // width: drawerWidth,
     flexShrink: 0,
-    backgroundColor: "#0e1a2d",
+    backgroundColor: "white",
     fontFamily: "Share Tech Mono, monospace",
   },
   drawerPaper: {
     //   width: drawerWidth,
-    backgroundColor: "#0e1a2d",
+    backgroundColor: "white",
     color: "#04d9ff",
     fontFamily: "Share Tech Mono, monospace",
   },
@@ -113,17 +112,23 @@ export default function PersistentDrawerRight({ children }) {
         <Toolbar>
           <Typography variant="h6" noWrap className={classes.title}>
             <Link style={{ textDecoration: "none", color: "inherit" }} to={`/`}>
-              noor grewal
+              My Portfolio
             </Link>
           </Typography>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="end"
-            onClick={handleDrawerOpen}
+            onClick={() => {}}
             className={clsx(open && classes.hide)}
           >
-            <MenuIcon />
+            <a
+              href={`https://drive.google.com/file/d/1M3t8mx_O7s6wNuAZeipqimlxzcjPhdZK/view?usp=sharing`}
+              style={{ textDecoration: "none", color: "inherit" }}
+              target={"_blank"}
+            >
+              Click to open Resume
+            </a>
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -134,77 +139,6 @@ export default function PersistentDrawerRight({ children }) {
       >
         {children}
       </main>
-      <Drawer
-        className={classes.drawer}
-        variant="persistent"
-        anchor="right"
-        open={open}
-        classes={{
-          paper: classes.drawerPaper,
-        }}
-      >
-        <div className={classes.drawerHeader}>
-          <p
-            onClick={handleDrawerClose}
-            style={{ padding: "2em", cursor: "pointer" }}
-          >
-            {theme.direction === "rtl" ? (
-              <ChevronLeftIcon />
-            ) : (
-              <ChevronRightIcon />
-            )}
-          </p>
-        </div>
-        <Divider />
-        <List>
-          {[
-            "About",
-            "Work Experience",
-            "Featured Projects",
-            "Contact",
-            "Resume",
-          ].map((text, index) => (
-            <a
-              href={
-                text !== "Resume"
-                  ? `/portfolio/profile/#${text
-                      .split(" ")
-                      .join("")
-                      .toLowerCase()}`
-                  : `https://drive.google.com/file/d/1M3t8mx_O7s6wNuAZeipqimlxzcjPhdZK/view?usp=sharing`
-              }
-              style={{ textDecoration: "none", color: "inherit" }}
-              target={`${text === "Resume" ? "_blank" : ""}`}
-            >
-              {text === "Resume" ? (
-                <p
-                  style={{
-                    padding: "2em",
-                    textAlign: "center",
-                    cursor: "pointer",
-                    border: "1px solid #04d9ff",
-                    padding: "0.9em",
-                    margin: "4em",
-                    borderRadius: "25%",
-                  }}
-                >
-                  {text}
-                </p>
-              ) : (
-                <p
-                  style={{
-                    padding: "2em",
-                    textAlign: "center",
-                    cursor: "pointer",
-                  }}
-                >
-                  {text}
-                </p>
-              )}
-            </a>
-          ))}
-        </List>
-      </Drawer>
     </div>
   )
 }

@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { makeStyles, withStyles } from "@material-ui/core/styles"
 import About from "../components/About.js"
-import WorkExperience from "../components/WorkExperience.js"
 import Projects from "../components/Projects.js"
 import Drawer from "../components/Drawer.js"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -40,40 +39,38 @@ const Profile = () => {
 
   return (
     <Layout>
-      {/* <Header /> */}
       <Drawer>
         <SEO title="profile" />
-        <div
-          style={{ margin: "auto", display: "flex", flexDirection: "column" }}
-        >
+        <div style={{ display: "flex", flexDirection: "column" }}>
           <About />
-          <WorkExperience />
           <Projects />
           <center>
             <div id="contact">
               <h4
+                className="blue-highlight"
                 style={{
-                  color: "#04d9ff",
-                  fontFamily: "Share Tech Mono, monospace",
+                  fontFamily: "monospace",
+                  fontSize: "10em",
                   margin: 0,
                   textAlign: "center",
                 }}
               >
-                Get In Touch
+                Send Me a Message
               </h4>
               <p
                 style={{
-                  color: "#3ce397",
+                  color: "#d8909c",
                   textAlign: "center",
                   marginTop: "5em",
                 }}
               >
-                grewal.jagnoor@gmail.com
+                <span>grewal.jagnoor</span>
+                <span className="grey-highlight">@gmail.com</span>
               </p>
               <div style={{ display: "flex", justifyContent: "center" }}>
                 <Link
                   to="https://www.linkedin.com/in/noorgrewal/"
-                  style={{ color: "#04d9ff" }}
+                  style={{ color: "black" }}
                   target="_blank"
                 >
                   <FontAwesomeIcon
@@ -84,7 +81,7 @@ const Profile = () => {
                 </Link>
                 <Link
                   to="https://github.com/gjagnoor"
-                  style={{ color: "#04d9ff" }}
+                  style={{ color: "black" }}
                   target="_blank"
                 >
                   <FontAwesomeIcon

@@ -1,0 +1,15 @@
+---
+type: "project"
+name: "SQL - Data Analytics"
+position: 1
+technologies: ""
+imgURL: "[to add screenshot of VSCODE with template opened. To showcase organization, etc]"
+link: ""
+github: ""
+---
+
+The core motivation behind building this project was to showcase my research and experimentation skillset. It's based off of dummy but realistic enough data. I've added a markdown file that explains why I decided to pursue this problem and why I feel computational science should be the first step to deciding if a scientific research experiments should be conducted or not.
+
+Development status : Not in Development
+
+- This is low priority. I should focus on my portfolio for SWE interviews.
