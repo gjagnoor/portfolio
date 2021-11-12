@@ -14,4 +14,4 @@ A personal website showcasing my projects. You are already here :)
 
 Drive : To give an idea about the breadth and depth of content I prefer welcome websites have.
 
-Development status : Passive
+Development status : Passive; <a href="">Open Application</a> , <a href="">GitHub[Application Code]</a>

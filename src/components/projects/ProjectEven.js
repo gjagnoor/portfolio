@@ -11,27 +11,16 @@ export default function ProjectEven({ node }) {
   const reactElement = htmlToReactParser.parse(node.html)
   return (
     <React.Fragment>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-        }}
-      >
-        <p className="projlangs">{node.frontmatter.technologies}</p>
-        <h4 className="projheading1">{node.frontmatter.name}</h4>
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <FontAwesomeIcon icon={faGithubAlt} size={"2x"} />
-          <FontAwesomeIcon
-            style={{ marginLeft: "2em" }}
-            icon={faExternalLinkAlt}
-            size={"2x"}
-            className="pink-highlight"
-          />
-        </div>
+      <div className="space"></div>
+
+      <h2>{node.frontmatter.name}</h2>
+      <p>{node.frontmatter.technologies}</p>
+      <div className="left-right">
+        <div>{reactElement}</div>
+        <hr className="separation-dot" />
+        <img src={images.editor} className="img-shrink" />
       </div>
-      <div>{reactElement}</div>
-      <hr style={{ marginTop: "2%" }} />
+      <div className="space"></div>
     </React.Fragment>
   )
 }

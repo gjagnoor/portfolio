@@ -1,9 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import images from "./images.js"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithubAlt } from "@fortawesome/free-brands-svg-icons"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 const HtmlToReactParser = require("html-to-react").Parser
 
 export default function ProjectOdd({ node }) {
@@ -11,30 +8,17 @@ export default function ProjectOdd({ node }) {
   const reactElement = htmlToReactParser.parse(node.html)
   return (
     <React.Fragment>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-        }}
-      >
-        <p className="projlangs">{node.frontmatter.technologies}</p>
-        <h4 className="projheading1">{node.frontmatter.name}</h4>
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <FontAwesomeIcon
-            icon={faExternalLinkAlt}
-            size={"2x"}
-            className="pink-highlight"
-          />
-          <FontAwesomeIcon
-            style={{ marginLeft: "2em" }}
-            icon={faGithubAlt}
-            size={"2x"}
-          />
-        </div>
+      <div className="space"></div>
+      <div>
+        <h2 className="projheading1">{node.frontmatter.name}</h2>
+        <p>{node.frontmatter.technologies}</p>
       </div>
-      <div>{reactElement}</div>
-      <hr style={{ marginTop: "2%" }} />
+      <div className="right-left">
+        <img src={images.editor} className="img-shrink" />
+        <hr className="separation-dot" />
+        <div className="content">{reactElement}</div>
+      </div>
+      <div className="space"></div>
     </React.Fragment>
   )
 }

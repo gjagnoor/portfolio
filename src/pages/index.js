@@ -2,70 +2,60 @@ import React from "react"
 import { Link } from "gatsby"
 import Typewriter from "typewriter-effect"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import "../components/layout.css"
+import { Translate } from "@material-ui/icons"
+import Footer from "../components/Footer"
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <SEO title="Home" />
-      <div
+    <div className="centerPage">
+      <div style={{ fontSize: "2em" }}>
+        <Typewriter
+          onInit={typewriter => {
+            typewriter
+              .typeString("My Portfolio")
+              .callFunction(() => {
+                console.log("String typed out!")
+              })
+              .pauseFor(2200)
+              .deleteAll()
+              .callFunction(() => {
+                console.log("All strings were deleted")
+              })
+              .start()
+          }}
+          options={{
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      </div>
+      <div className="space">
+        <h3> {` FullStack Software Engineer `}</h3>
+      </div>
+      <p
         style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          overflowY: "hidden",
+          fontSize: "1em",
         }}
       >
-        <center>
-          <div id="name">
-            <Typewriter
-              onInit={typewriter => {
-                typewriter
-                  .typeString("My Portfolio")
-                  .callFunction(() => {
-                    console.log("String typed out!")
-                  })
-                  .pauseFor(2200)
-                  .deleteAll()
-                  .callFunction(() => {
-                    console.log("All strings were deleted")
-                  })
-                  .start()
-              }}
-              options={{
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </div>
-        </center>
-        <center>
-          <div id="position">
-            <h3 id="positiontext"> {` FullStack Software Engineer `}</h3>
-          </div>
-        </center>
-        <center>
-          <div id="languages">
-            <h6
-              style={{
-                fontSize: "1em",
-                fontFamily: "Share Tech Mono, monospace",
-              }}
-            >
-              Fullstack JavaScript . HTML5/CSS3/SCSS . PostgreSQL/GraphQL .
-              React/Redux . Cloud Services . Payment Gateways . Gatsby
-            </h6>
-          </div>
-        </center>
-        <center>
-          <div id="enter">
-            <Link to="/profile" className="link">
-              <bold> > </bold>
-            </Link>
-          </div>
-        </center>
-      </div>
-    </Layout>
+        Fullstack JavaScript . HTML5/CSS3/SCSS . PostgreSQL/GraphQL .
+        React/Redux . Cloud Services . Payment Gateways . Gatsby
+      </p>
+      <Link to="/portfolio" className="link">
+        <span
+          style={{
+            color: "white",
+            border: "1px solid white",
+            padding: "0.5rem",
+          }}
+        >
+          {" "}
+          >{" "}
+        </span>
+      </Link>
+      <div className="space"></div>
+      <Footer />
+    </div>
   )
 }
 

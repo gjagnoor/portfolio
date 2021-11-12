@@ -19,4 +19,4 @@ The Product Idea : The product idea was adopted from <span className="grey-highl
 - Editor 0.0 - Prototype Design [.pdf] - Users' perspective
 - Editor 0.1 - Working Prototype [github link here] - Users' perspective
 
-Development status : Passive
+Development status : Passive; <a href="">Open Application</a> , <a href="">GitHub[Application Code]</a>

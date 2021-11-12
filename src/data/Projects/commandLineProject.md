@@ -16,4 +16,4 @@ Drive : To showcase what I'm learning currently, I did not add originality here.
 
 Please know - I'm willing to learn and apply new languages and technologies, but this absolutely depends on the company I'm working at and the team I'm a part of. I'll add more information as I expand my skillset.
 
-Learning status : Passive
+Learning status : Passive; <a href="">Open Application</a> , <a href="">GitHub[Application Code]</a>
