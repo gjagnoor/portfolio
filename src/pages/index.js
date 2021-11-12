@@ -41,7 +41,7 @@ const IndexPage = () => {
         Fullstack JavaScript . HTML5/CSS3/SCSS . PostgreSQL/GraphQL .
         React/Redux . Cloud Services . Payment Gateways . Gatsby
       </p>
-      <Link to="/portfolio" className="link">
+      <Link to="/portfolio/projects" className="link">
         <span
           style={{
             color: "white",
