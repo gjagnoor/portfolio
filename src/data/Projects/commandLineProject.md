@@ -10,10 +10,8 @@ link: "https://www.npmjs.com/package/aaria-cli"
 github: "https://github.com/gjagnoor/aaria-cli"
 ---
 
-Recursive directory/file listing program that produces depth indented listing of folders/files
+A recursive directory/file listing program that produces depth indented listing of folders/files
 
-Drive : To showcase what I'm learning currently, I did not add originality here.
+Project : The project idea was adopted from the bash command `ls`. It’s a working prototype.
 
-Please know - I'm willing to learn and apply new languages and technologies, but this absolutely depends on the company I'm working at and the team I'm a part of. I'll add more information as I expand my skillset.
-
-Learning status : Passive; <a href="">Open Application</a> , <a href="">GitHub[Application Code]</a>
+Development status : Passive Development; <a href="#" style="color: #fe6694">Open Application</a> , <a href="#" style="color: #fe6694">GitHub [Application Code]</a>

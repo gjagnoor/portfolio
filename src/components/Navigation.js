@@ -1,6 +1,8 @@
 import { Link } from "gatsby"
 import React from "react"
 
+const resumeLink =
+  "https://drive.google.com/file/d/1M3t8mx_O7s6wNuAZeipqimlxzcjPhdZK/view?usp=sharing"
 const Navigation = ({ children }) => {
   return (
     <div
@@ -15,7 +17,9 @@ const Navigation = ({ children }) => {
       <Link to="/" style={{ color: "white" }}>
         Portfolio
       </Link>
-      <div>Open Resume</div>
+      <a href={resumeLink} target="_blank" style={{ color: "white" }}>
+        Open Resume
+      </a>
     </div>
   )
 }
