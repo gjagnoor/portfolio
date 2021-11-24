@@ -14,7 +14,7 @@ export default function ProjectOdd({ node }) {
         <p>{node.frontmatter.technologies}</p>
       </div>
       <div className="right-left">
-        <img src={images.editor} className="img-shrink" />
+        <img src={images[node.frontmatter.identifier]} className="img-shrink" />
         <hr className="separation-dot" />
         <div className="content">{reactElement}</div>
       </div>

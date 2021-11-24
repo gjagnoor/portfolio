@@ -1,9 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import images from "./images.js"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithubAlt } from "@fortawesome/free-brands-svg-icons"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 const HtmlToReactParser = require("html-to-react").Parser
 
 export default function ProjectEven({ node }) {
@@ -18,7 +15,7 @@ export default function ProjectEven({ node }) {
       <div className="left-right">
         <div>{reactElement}</div>
         <hr className="separation-dot" />
-        <img src={images.editor} className="img-shrink" />
+        <img src={images[node.frontmatter.identifier]} className="img-shrink" />
       </div>
       <div className="space"></div>
     </React.Fragment>
