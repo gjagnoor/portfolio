@@ -1,7 +1,7 @@
 ---
 type: "project"
 name: "The Codebase"
-technologies: ""
+technologies: "React . Redux . Express/Nodejs . HTML5 . PostgreSQL/Prisma . Firestore . Redis . Heroku . OAuth20 . Cypress . eslint . CSS3 . Blueprintjs"
 position: 3
 identifier: "codebase"
 sub: false
