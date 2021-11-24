@@ -1,7 +1,7 @@
 ---
 type: "project"
 name: "Editor"
-technologies: "React . Code Mirror . HTML5 . CSS/SCSS . Material-UI"
+technologies: "React . Code Mirror . HTML5 . CSS/SCSS . Material-UI . OAuth20 . PostgreSQL/pg . Nodejs/Express . Heroku"
 position: 1
 identifier: "editor"
 sub: false
