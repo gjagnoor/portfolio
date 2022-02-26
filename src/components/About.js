@@ -26,7 +26,7 @@ const About = () => {
             }}
             src={images.meImg}
           />
-          <p style={{ textAlign: "center", fontSize: "4em", marginTop: "2em" }}>
+          <p style={{ textAlign: "center", fontSize: "4em", marginTop: "1em" }}>
             Noor Grewal
           </p>
           <p style={{ textAlign: "center", fontSize: "2em", marginTop: "1em" }}>
