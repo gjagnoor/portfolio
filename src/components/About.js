@@ -26,8 +26,10 @@ const About = () => {
             }}
             src={images.meImg}
           />
-          <p style={{ textAlign: "center", fontSize: "4em" }}>Noor Grewal</p>
-          <p style={{ textAlign: "center", fontSize: "2em" }}>
+          <p style={{ textAlign: "center", fontSize: "4em", marginTop: "2em" }}>
+            Noor Grewal
+          </p>
+          <p style={{ textAlign: "center", fontSize: "2em", marginTop: "2em" }}>
             Fullstack Software Engineer and Programming Instructor
           </p>
           <p style={{ textAlign: "center" }}>Currently @ Fullstack Academy</p>
