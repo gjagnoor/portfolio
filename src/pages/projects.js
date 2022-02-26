@@ -6,7 +6,6 @@ import Layout from "../components/layout"
 import About from "../components/About.js"
 import ProjectsRender from "../components/Projects.js"
 import Navigation from "../components/Navigation"
-import Footer from "../components/Footer"
 
 const Projects = () => {
   return (
@@ -17,7 +16,6 @@ const Projects = () => {
           <ProjectsRender />
         </div>
       </Layout>
-      <Footer />
     </React.Fragment>
   )
 }
