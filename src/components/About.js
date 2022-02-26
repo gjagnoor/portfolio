@@ -1,7 +1,9 @@
 import React from "react"
+import { Link } from "gatsby"
 import images from "./projects/images"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithubAlt, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 
 const About = () => {
   return (
@@ -10,7 +12,7 @@ const About = () => {
         <div
           style={{
             height: "auto",
-            padding: "3em",
+            paddingTop: "3em",
           }}
         >
           <img
@@ -33,6 +35,38 @@ const About = () => {
             Fullstack Software Engineer and Programming Instructor
           </p>
           <p style={{ textAlign: "center" }}>Currently @ Fullstack Academy</p>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "right",
+              textAlign: "right",
+            }}
+          >
+            <Link
+              to="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=grewal.jagnoor@gmail.com"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                size="2x"
+                style={{ margin: "1em" }}
+              />
+            </Link>
+            <Link to="https://www.linkedin.com/in/noorgrewal/" target="_blank">
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                size="2x"
+                style={{ margin: "1em" }}
+              />
+            </Link>
+            <Link to="https://github.com/gjagnoor" target="_blank">
+              <FontAwesomeIcon
+                icon={faGithubAlt}
+                size="2x"
+                style={{ margin: "1em" }}
+              />
+            </Link>
+          </div>
         </div>
       </div>
       <div
@@ -58,29 +92,6 @@ const About = () => {
           I have experience working with Fullstack JavaScript, HTML5/CSS3/SCSS,
           PostgreSQL/GraphQL, React/Redux, Cloud Services, Payment Gateways,
           Gatsby
-        </p>
-      </div>
-      <div
-        style={{
-          display: "block",
-          marginLeft: "auto",
-          marginRight: "auto",
-          width: "60%",
-          textAlign: "center",
-        }}
-      >
-        <FontAwesomeIcon
-          icon={faLinkedin}
-          size="2x"
-          style={{ margin: "1em" }}
-        />
-        <FontAwesomeIcon
-          icon={faGithubAlt}
-          size="2x"
-          style={{ margin: "1em" }}
-        />
-        <p style={{ textAlign: "center" }}>
-          Mail to : grewal.jagnoor@gmail.com
         </p>
       </div>
     </div>
