@@ -44,7 +44,7 @@ const IndexPage = () => {
         Fullstack JavaScript . HTML5/CSS3/SCSS . PostgreSQL/GraphQL .
         React/Redux . Cloud Services . Payment Gateways . Gatsby
       </p>
-      <Link to="/projects" className="link">
+      <Link to="/portfolio" className="link">
         <span
           style={{
             color: "white",
@@ -53,7 +53,7 @@ const IndexPage = () => {
           }}
         >
           {" "}
-          >{" "}
+          {">"}{" "}
         </span>
       </Link>
       <div className="space"></div>

@@ -8,7 +8,7 @@ const Navigation = ({ children }) => {
   return (
     <Navbar>
       <Navbar.Group align={Alignment.LEFT}>
-        <Link to="/">
+        <Link to="/portfolio">
           <Button className="bp3-minimal">Noor Grewal</Button>
         </Link>
       </Navbar.Group>

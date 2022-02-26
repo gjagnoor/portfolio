@@ -9,8 +9,18 @@ export default function ProjectOdd({ node }) {
   return (
     <React.Fragment>
       <div className="space"></div>
+      <div style={{ display: "flex" }}>
+        <p
+          style={{
+            borderRadius: "50%",
+            fontSize: "5em",
+          }}
+        >
+          {node.frontmatter.position}
+        </p>
+        <h2>{node.frontmatter.name}</h2>
+      </div>
       <div>
-        <h2 className="projheading1">{node.frontmatter.name}</h2>
         <p>{node.frontmatter.technologies}</p>
       </div>
       <div className="right-left">

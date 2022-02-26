@@ -50,12 +50,12 @@ const About = () => {
           odit aut fugit, sed quia consequuntur magni dolores eosqui ratione
           voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
           quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-          eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-          voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
-          ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-          consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate
-          velit esse quam nihil molestiae consequatur, vel illumqui dolorem eum
-          fugiat quo voluptas nulla pariatur?
+          eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.
+        </p>
+        <p>
+          I have experience working with Fullstack JavaScript, HTML5/CSS3/SCSS,
+          PostgreSQL/GraphQL, React/Redux, Cloud Services, Payment Gateways,
+          Gatsby
         </p>
       </div>
       <div
@@ -77,7 +77,9 @@ const About = () => {
           size="2x"
           style={{ margin: "1em" }}
         />
-        <p>Mail to : grewal.jagnoor@gmail.com</p>
+        <p style={{ textAlign: "center" }}>
+          Mail to : grewal.jagnoor@gmail.com
+        </p>
       </div>
     </div>
   )
