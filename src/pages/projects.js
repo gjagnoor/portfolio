@@ -1,23 +1,23 @@
 import React from "react"
+import "normalize.css"
+import "@blueprintjs/core/lib/css/blueprint.css"
+import "@blueprintjs/icons/lib/css/blueprint-icons.css"
 import Layout from "../components/layout"
 import About from "../components/About.js"
-import Projects from "../components/Projects.js"
-import Contact from "../components/Contact"
+import ProjectsRender from "../components/Projects.js"
 import Navigation from "../components/Navigation"
-import Footer from "../components/Footer"
 
-const Portfolio = () => {
+const Projects = () => {
   return (
     <React.Fragment>
       <Navigation />
       <Layout>
-        <About />
-        <Projects />
-        <Contact />
-        <Footer />
+        <div style={{ margin: "4em" }}>
+          <ProjectsRender />
+        </div>
       </Layout>
     </React.Fragment>
   )
 }
 
-export default Portfolio
+export default Projects

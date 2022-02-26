@@ -1,28 +1,86 @@
 import React from "react"
-import Timeline from "./Timeline"
+import images from "./projects/images"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithubAlt, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+
 const About = () => {
   return (
     <div>
-      <div className="space"></div>
-      <div>
-        Hi, I'm <span style={{ color: "#fe6694" }}>Jagnoor</span>. I'm a{" "}
-        <span style={{ color: "#fe6694" }}> Full Stack Software Engineer</span>.
-        This portfolio is meant to showcase my personal projects. If you feel
-        you can connect with my work, please reach out to me at
-        <span style={{ color: "#fe6694" }}> grewal.jagnoor@gmail.com</span>. I’d
-        love to see if there is an opportunity at your company I may be a fit
-        for.
+      <div style={{ backgroundColor: "#ebf1f1" }}>
+        <div
+          style={{
+            height: "auto",
+            padding: "3em",
+          }}
+        >
+          <img
+            style={{
+              display: "block",
+              padding: "1em",
+              marginLeft: "auto",
+              marginRight: "auto",
+              width: "10%",
+              borderRadius: "50%",
+              border: "1px solid #88a2bc",
+              // filter: "grayscale(100%)",
+            }}
+            src={images.meImg}
+          />
+          <p style={{ textAlign: "center", fontSize: "4em" }}>Noor Grewal</p>
+          <p style={{ textAlign: "center", fontSize: "2em" }}>
+            Fullstack Software Engineer and Programming Instructor
+          </p>
+          <p style={{ textAlign: "center" }}>Currently @ Fullstack Academy</p>
+        </div>
       </div>
-      <div className="space"></div>
-      <div>
-        Please note : These projects were built alone from the ground up. They
-        are meant to give you an idea about my >
+      <div
+        style={{
+          display: "block",
+          marginLeft: "auto",
+          marginRight: "auto",
+          width: "60%",
+        }}
+      >
+        <h1 style={{ textAlign: "left" }}>About Me</h1>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dictasunt
+          explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+          odit aut fugit, sed quia consequuntur magni dolores eosqui ratione
+          voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+          quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+          eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.
+        </p>
+        <p>
+          I have experience working with Fullstack JavaScript, HTML5/CSS3/SCSS,
+          PostgreSQL/GraphQL, React/Redux, Cloud Services, Payment Gateways,
+          Gatsby
+        </p>
       </div>
-      <div className="space"></div>
-      <Timeline
-        components={["Ability to learn a new skill set", "Technical Knowledge"]}
-      />
-      <div className="space"></div>
+      <div
+        style={{
+          display: "block",
+          marginLeft: "auto",
+          marginRight: "auto",
+          width: "60%",
+          textAlign: "center",
+        }}
+      >
+        <FontAwesomeIcon
+          icon={faLinkedin}
+          size="2x"
+          style={{ margin: "1em" }}
+        />
+        <FontAwesomeIcon
+          icon={faGithubAlt}
+          size="2x"
+          style={{ margin: "1em" }}
+        />
+        <p style={{ textAlign: "center" }}>
+          Mail to : grewal.jagnoor@gmail.com
+        </p>
+      </div>
     </div>
   )
 }
