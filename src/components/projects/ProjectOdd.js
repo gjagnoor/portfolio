@@ -7,7 +7,7 @@ export default function ProjectOdd({ node }) {
   const htmlToReactParser = new HtmlToReactParser()
   const reactElement = htmlToReactParser.parse(node.html)
   return (
-    <React.Fragment>
+    <div className="header">
       <div className="space"></div>
       <div style={{ display: "flex" }}>
         <p
@@ -29,6 +29,6 @@ export default function ProjectOdd({ node }) {
         <div className="content">{reactElement}</div>
       </div>
       <div className="space"></div>
-    </React.Fragment>
+    </div>
   )
 }

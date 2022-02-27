@@ -7,7 +7,7 @@ export default function ProjectEven({ node }) {
   const htmlToReactParser = new HtmlToReactParser()
   const reactElement = htmlToReactParser.parse(node.html)
   return (
-    <React.Fragment>
+    <div className="header">
       <div className="space"></div>
       <div style={{ display: "flex" }}>
         <p
@@ -27,6 +27,6 @@ export default function ProjectEven({ node }) {
         <img src={images[node.frontmatter.identifier]} className="img-shrink" />
       </div>
       <div className="space"></div>
-    </React.Fragment>
+    </div>
   )
 }

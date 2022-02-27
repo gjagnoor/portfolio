@@ -9,12 +9,7 @@ const About = () => {
   return (
     <div>
       <div style={{ backgroundColor: "#ebf1f1" }}>
-        <div
-          style={{
-            height: "auto",
-            paddingTop: "3em",
-          }}
-        >
+        <div className="header">
           <img
             style={{
               display: "block",

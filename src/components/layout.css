@@ -41,6 +41,11 @@ body {
   margin: auto;
 }
 
+.header {
+  height: auto;
+  padding: 2em;
+}
+
 /* breakpoints for responsivenes */
 
 /* (Mobile S, 320px and up) */
