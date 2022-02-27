@@ -70,7 +70,6 @@ const About = () => {
           display: "block",
           marginLeft: "auto",
           marginRight: "auto",
-          width: "60%",
         }}
       >
         <h1 style={{ textAlign: "left" }}>About Me</h1>
