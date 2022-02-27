@@ -11,6 +11,7 @@ const About = () => {
       <div style={{ backgroundColor: "#ebf1f1" }}>
         <div className="header">
           <img
+            className="meImg"
             style={{
               display: "block",
               padding: "1em",
