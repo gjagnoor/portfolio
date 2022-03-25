@@ -7,7 +7,7 @@ identifier: "editor"
 sub: false
 imgURL: "../images/editor.png"
 link: "https://editorprod.herokuapp.com/"
-github: "https://github.com/gjagnoor/Editorv1"
+github: "https://github.com/gjagnoor/editorprod"
 ---
 
 Allows new developers to create code snippets [bootstrapped with CSS3] and view results.
