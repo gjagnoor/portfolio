@@ -24,7 +24,14 @@ const About = () => {
             }}
             src={images.meImg}
           />
-          <p style={{ textAlign: "center", fontSize: "4em", marginTop: "1em" }}>
+          <p
+            style={{
+              textAlign: "center",
+              fontSize: "4em",
+              marginTop: "1em",
+              fontWeight: "bolder",
+            }}
+          >
             Noor Grewal
           </p>
           <p style={{ textAlign: "center", fontSize: "2em", marginTop: "1em" }}>
@@ -75,19 +82,23 @@ const About = () => {
       >
         <h1 style={{ textAlign: "left" }}>About Me</h1>
         <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dictasunt
-          explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-          odit aut fugit, sed quia consequuntur magni dolores eosqui ratione
-          voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-          quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-          eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.
+          I am a Software Engineer with 2 years of experience in the education
+          technology industry. I got my undergrad from UC Berkeley where I
+          developed an interest in software engineering while completing
+          research in computational biology.
         </p>
         <p>
-          I have experience working with Fullstack JavaScript, HTML5/CSS3/SCSS,
-          PostgreSQL/GraphQL, React/Redux, Cloud Services, Payment Gateways,
-          Gatsby
+          While in undergrad, I also attended Fullstack Academy, one of the best
+          software engineering schools in New York with less than 8% acceptance
+          rate. I graduated almost top of my class and was selected to be a
+          teaching fellow thereafter. Now I work as an Instructor here, training
+          the next generation of programmers. If you are looking for a Fullstack
+          Software Engineer, please reach out. I would love to set up a call!
+        </p>
+        <p>
+          I have experience working with Fullstack JavaScript
+          (JavaScript/Node.js), HTML5/CSS3/SCSS, PostgreSQL/GraphQL,
+          React/Redux, Cloud Services, Payment Gateways, Gatsby
         </p>
       </div>
     </div>
