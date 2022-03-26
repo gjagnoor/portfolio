@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{"16l3":function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),r=(n("9d8Q"),n("MIsB"),n("KETp"),n("Bl7J")),c=(n("Fkb1"),n("DxCv")),u=n("7pXE");t.default=function(){return l.a.createElement(l.a.Fragment,null,l.a.createElement(u.a,null),l.a.createElement(r.a,null,l.a.createElement("h1",{style:{textAlign:"center",fontSize:"5em"}},"Featured Projects"),l.a.createElement("div",{style:{margin:"2em"}},l.a.createElement(c.a,null))))}}}]);
+//# sourceMappingURL=component---src-pages-projects-js-2620c650410d94e25c2c.js.map
