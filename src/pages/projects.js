@@ -12,7 +12,16 @@ const Projects = () => {
     <React.Fragment>
       <Navigation />
       <Layout>
-        <div style={{ margin: "4em" }}>
+        <h1
+          style={{
+            textAlign: "center",
+            fontSize: "5em",
+            // textDecoration: "underline",
+          }}
+        >
+          Featured Projects
+        </h1>
+        <div style={{ margin: "2em" }}>
           <ProjectsRender />
         </div>
       </Layout>
