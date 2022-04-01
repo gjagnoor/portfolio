@@ -16,6 +16,13 @@ const Navigation = ({ children }) => {
         <Link to="/projects">
           <Button className="bp3-minimal" icon="projects" text="Projects" />
         </Link>
+        <Link to="/artwork">
+          <Button
+            className="bp3-minimal"
+            icon="polygon-filter"
+            text="Artwork"
+          />
+        </Link>
         <Link to={resumeLink}>
           <Button className="bp3-minimal" icon="document" text="Resume" />
         </Link>

@@ -98,7 +98,12 @@ const About = () => {
         <p>
           I have experience working with Fullstack JavaScript
           (JavaScript/Node.js), HTML5/CSS3/SCSS, PostgreSQL/GraphQL,
-          React/Redux, Cloud Services, Payment Gateways, Gatsby
+          React/Redux, Cloud Services, Payment Gateways, and Gatsby
+        </p>
+        <p>
+          While I am an engineer at heart, I do love to spend some free time
+          building digital artwork as a hobby. Do take a peek at the Projects
+          page and the Artwork page to see some of my work :)
         </p>
       </div>
     </div>
