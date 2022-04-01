@@ -35,12 +35,18 @@ export default class Example extends Component {
     ]
 
     return (
-      <div>
+      <div
+        style={{
+          backgroundColor: "#40424a",
+        }}
+      >
         <Navigation />
         <h1
           style={{
             textAlign: "center",
             fontSize: "5em",
+            backgroundColor: "#40424a",
+            color: "white",
           }}
         >
           Featured Digital Artwork
