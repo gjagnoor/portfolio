@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Navigation from "../components/Navigation"
 import DztImageGalleryComponent from "reactjs-image-gallery"
 import images from "../components/projects/images"
+import Layout from "../components/layout"
 
 export default class Example extends Component {
   render() {
@@ -37,23 +38,25 @@ export default class Example extends Component {
     return (
       <React.Fragment>
         <Navigation />
-        <div
-          style={{
-            backgroundColor: "#40424a",
-          }}
-        >
-          <h1
+        <Layout>
+          <div
             style={{
-              textAlign: "center",
-              fontSize: "5em",
               backgroundColor: "#40424a",
-              color: "white",
             }}
           >
-            Featured Digital Artwork
-          </h1>
-          <DztImageGalleryComponent images={data} />
-        </div>
+            <h1
+              style={{
+                textAlign: "center",
+                fontSize: "5em",
+                backgroundColor: "#40424a",
+                color: "white",
+              }}
+            >
+              Featured Digital Artwork
+            </h1>
+            <DztImageGalleryComponent images={data} />
+          </div>
+        </Layout>
       </React.Fragment>
     )
   }
