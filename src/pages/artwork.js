@@ -35,24 +35,26 @@ export default class Example extends Component {
     ]
 
     return (
-      <div
-        style={{
-          backgroundColor: "#40424a",
-        }}
-      >
+      <React.Fragment>
         <Navigation />
-        <h1
+        <div
           style={{
-            textAlign: "center",
-            fontSize: "5em",
             backgroundColor: "#40424a",
-            color: "white",
           }}
         >
-          Featured Digital Artwork
-        </h1>
-        <DztImageGalleryComponent images={data} />
-      </div>
+          <h1
+            style={{
+              textAlign: "center",
+              fontSize: "5em",
+              backgroundColor: "#40424a",
+              color: "white",
+            }}
+          >
+            Featured Digital Artwork
+          </h1>
+          <DztImageGalleryComponent images={data} />
+        </div>
+      </React.Fragment>
     )
   }
 }
