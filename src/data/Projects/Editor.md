@@ -12,4 +12,4 @@ github: "https://github.com/gjagnoor/editorprod"
 
 Allows new developers to create code snippets [bootstrapped with CSS3] and view results.
 
-Development status : Passive Development; <a href="https://editorprod.herokuapp.com/" style="color: #fe6694">Open Application</a> , <a href="https://github.com/gjagnoor/Editorv1" style="color: #fe6694">GitHub [Application Code]</a>
+Development status : Passive Development; <a href="https://editorprod.herokuapp.com/" style="color: #fe6694">Open Application</a> , <a href="https://github.com/gjagnoor/editorprod" style="color: #fe6694">GitHub [Application Code]</a>
