@@ -103,7 +103,7 @@ const About = () => {
         <p>
           While I am an engineer at heart, I do love to spend some free time
           building digital artwork as a hobby. Do take a peek at the Projects
-          page and the Artwork page to see some of my work :)
+          page to see some of my work :)
         </p>
       </div>
     </div>
